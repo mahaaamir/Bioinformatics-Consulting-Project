@@ -163,3 +163,10 @@ call this script as sbatch ./mapReads.sh /pathtodata
 ```
 SAM files will be written to data/mappedReads 
 slurm output is being written to consultingProject/scripts. <Edit this part after you move it> 
+
+### Alignment post-processing 
+
+### FST calculation 
+# Allele frequencies for each population at each base in the reference genome are contained in a synchronized file. For Popoolation2 have to make a synchronized file for input. Create a synchronized file
+
+samtools mpileup -B map/pop1.bam map/pop2.bam > p1_p2.mpileup
